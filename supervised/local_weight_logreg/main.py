@@ -62,6 +62,8 @@ if __name__ == "__main__":
     plot_lwlr(x_data, y_data, save_to='plots/orig_data.png')
 
     
+    # Create prediction plots over entire range of (x0, x1)
+    # Visualizes the decision boundary of the model
     x0_min = np.min(x_data[:,1])
     x0_max = np.max(x_data[:,1])
 
