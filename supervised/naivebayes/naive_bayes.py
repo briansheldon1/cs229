@@ -3,9 +3,11 @@ import numpy as np
 
 class NaiveBayes:
     def __init__(self):
-        self.phi_0 = {}
-        self.phi_1 = {}
-        self.phi_y = {}
+
+        # stored parameters
+        self.phi_0 = {} # {char: freq(char)}
+        self.phi_1 = {} 
+        self.phi_y = None
     
     def create_charset(self, X):
         self.charset = set()
