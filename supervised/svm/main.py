@@ -18,4 +18,5 @@ if __name__ =="__main__":
     # plot decision boundary
     x0_range = (np.min(x_data[:,0]), np.max(x_data[:,0]))
     x1_range = (np.min(x_data[:,1]), np.max(x_data[:,1]))
-    plot_decision_boundary(svm, x0_range, x1_range, save_to="plots/svm_boundary.png")
+    plot_decision_boundary(svm, x0_range, x1_range, 
+                           save_to="plots/svm_boundary.png")
