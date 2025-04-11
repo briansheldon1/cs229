@@ -3,7 +3,7 @@ import numpy as np
 
 def train_test_split(X: np.array, y: np.array, split=0.7):
 
-    # define num training examples
+    # define number of training examples
     m = len(X)
     m_train = round(m*split)-1
 
