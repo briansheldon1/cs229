@@ -2,6 +2,7 @@ import random as rand
 import numpy as np
 
 def train_test_split(X: np.array, y: np.array, split=0.7):
+    ''' Split X,y data into training and testing sets '''
 
     # define num training examples
     m = len(X)
