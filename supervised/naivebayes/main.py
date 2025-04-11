@@ -3,7 +3,6 @@ import numpy as np
 from utils import train_test_split
 from naive_bayes import NaiveBayes
 
-
 if __name__ == "__main__":
 
     # construct data
@@ -27,6 +26,7 @@ if __name__ == "__main__":
     false_neg = sum(np.logical_and(y_pred==0, y_test==1))/len(y_pred)
     false_pos = sum(np.logical_and(y_pred==1, y_test==0))/len(y_pred)
 
+    # get accuracy and accuracy of randomly guessing
     acc = (true_pos+false_neg)/(true_pos+true_neg+false_pos+false_neg)
     ran_acc = (model.phi_y)**2 + (1-model.phi_y)**2
 
